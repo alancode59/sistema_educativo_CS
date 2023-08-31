@@ -1,0 +1,30 @@
+[
+    {
+        "categoria": "Métodologias de Investigación.",
+        "pregunta": "¿Qué es la metodología de la investigación y para qué se utiliza?",
+        "respuesta": "Un conjunto de métodos y técnicas que se aplican sistemáticamente durante un proceso de investigación para alcanzar un resultado teóricamente válido.",
+        "incorrecta1": "No",
+        "incorrecta2": "No",
+        "incorrecta3": "No \r",
+        "imagen": "https://www.questionpro.com/blog/wp-content/uploads/2019/12/Portada-investigacion-cientifica.jpg"
+    },
+    {
+        "categoria": "Métodologias de Investigación.",
+        "pregunta": "¿Qué factores se deben considerar al elegir el método de investigación?",
+        "respuesta": "El tipo de fenómeno a estudiar, los objetivos de la investigación y la perspectiva de análisis.",
+        "incorrecta1": "No",
+        "incorrecta2": "No",
+        "incorrecta3": "No \r",
+        "imagen": "https://www.lifeder.com/wp-content/uploads/2020/07/ilustraci%C3%B3n-investigadora-investigando-min.jpg"
+    },
+
+    {
+        "categoria": "Métodologias de Investigación.",
+        "pregunta": "Qué diferencias existen entre los métodos cuantitativos y cualitativos de investigación?",
+        "respuesta": "Si",
+        "incorrecta1": "No",
+        "incorrecta2": "No",
+        "incorrecta3": "No \r",
+        "imagen": "https://www.lifeder.com/wp-content/uploads/2020/08/concepto-de-ciencia-e-investigaci%C3%B3n-min.jpg"
+    }
+]

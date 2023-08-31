@@ -1,0 +1,251 @@
+[
+    {
+        "categoria": "Ciencias sociales",
+        "pregunta": "¿Que permiten las ciencias sociales?",
+        "respuesta": "Permiten conocer el comportamiento del individuo en sociedad desde diferentes disciplinas.",
+        "incorrecta1": "Permiten convivir en una sociedad sana y colaborativa.",
+        "incorrecta2": "Permiten mantener una comunicación de acuerdo a sus ramas en común.",
+        "incorrecta3": "Ninguna de las anteriores.\r",
+        "imagen": "https://noraidaviaja.files.wordpress.com/2014/04/44c85-etapas-historia-dibujo.png"
+    },
+
+    {
+        "categoria": "Ciencias sociales",
+        "pregunta": "¿Qué son las ciencias sociales?",
+        "respuesta": "Son un conjunto de disciplinas académicas que estudian aspectos de lo humano relacionados el comportamiento individual y las funciones y elementos de la organización social.",
+        "incorrecta1": "Conjunto de disciplinas que estudian y abarcan las humanidades.",
+        "incorrecta2": "Son las ciencias que estudian el área de las matemáticas.",
+        "incorrecta3": "Son un conjunto de ramas que estudian la geopolítica. \r",
+        "imagen": "https://noraidaviaja.files.wordpress.com/2014/04/44c85-etapas-historia-dibujo.png"
+    },
+
+    {
+        "categoria": "Ciencias sociales",
+        "pregunta": "Menciona tres campos de las ciencias sociales.",
+        "respuesta": "Derecho, Sociología, geografía.",
+        "incorrecta1": "Economía, Ing. Financiera, Ciencias Naturales.",
+        "incorrecta2": "Ing. Mecatronica, Ing. TI, Ing.Industrial.",
+        "incorrecta3": "Biología, Medicina, Psicología. \r",
+        "imagen": "https://noraidaviaja.files.wordpress.com/2014/04/44c85-etapas-historia-dibujo.png"
+    },
+
+    {
+        "categoria": "Ciencias sociales",
+        "pregunta": "¿Qué es la metodología de la investigación y para qué se utiliza?",
+        "respuesta": "Permiten conocer el comportamiento del individuo en sociedad desde diferentes disciplinas.",
+        "incorrecta1": "Una serie de preguntas que se hacen en la vida cotidiana.",
+        "incorrecta2": "Un modelo que no requiere seguir un método de investigación.",
+        "incorrecta3": "Un proceso que no necesita la fiabilidad de las fuentes. \r",
+        "imagen": "https://noraidaviaja.files.wordpress.com/2014/04/44c85-etapas-historia-dibujo.png"
+    },
+
+    {
+        "categoria": "Ciencias sociales",
+        "pregunta": "¿Qué factores se deben considerar al elegir el método de investigación?",
+        "respuesta": "El tipo de fenómeno a estudiar, los objetivos de la investigación y la perspectiva de análisis.",
+        "incorrecta1": "La experiencia previa del investigador, el presupuesto y la opinión de los expertos.",
+        "incorrecta2": "El tipo de ciencia a tratar, la disponibilidad de datos y el lugar de estudio.",
+        "incorrecta3": "El género, la edad y la escolaridad de los participantes. \r",
+        "imagen": "https://noraidaviaja.files.wordpress.com/2014/04/44c85-etapas-historia-dibujo.png"
+    },
+
+    {
+        "categoria": "Ciencias sociales",
+        "pregunta": "¿Qué diferencias existen entre los métodos cuantitativos y cualitativos de investigación?",
+        "respuesta": "Los métodos cuantitativos están generalmente asociados con la investigación cualitativa, mientras que los métodos cualitativos están asociados frecuentemente con la investigación cuantitativa.",
+        "incorrecta1": "Los métodos cuantitativos buscan hechos o causas de los fenómenos sociales con independencia de los estados subjetivos de los individuos, mientras que los métodos cualitativos buscan entender los fenómenos sociales desde la propia perspectiva del actor.",
+        "incorrecta2": "Los métodos cuantitativos buscan la comprensión por medio de técnicas como la observación participante, la entrevista y otras que generan datos descriptivos, mientras que los métodos cualitativos adoptan el modelo de investigación de las ciencias naturales.",
+        "incorrecta3": "Los métodos cuantitativos y cualitativos son idénticos y no hay diferencias entre ellos. \r",
+        "imagen": "https://noraidaviaja.files.wordpress.com/2014/04/44c85-etapas-historia-dibujo.png"
+    },
+
+    {
+        "categoria": "Modelos Económicos en México",
+        "pregunta": "¿Qué es un modelo económico?",
+        "respuesta": "Modelo que permite a los economistas estudiar la situación económica de cada país.",
+        "incorrecta1": "Modelo que permite ver las estadísticas de la economía de un Pais.",
+        "incorrecta2": "Modelo que permite te muestra la situación económica de los pueblos.",
+        "incorrecta3": "Modelo que permite calcular la economía de un País. \r",
+        "imagen": "https://assets.sutori.com/user-uploads/image/2bbb8d02-81ed-42e4-85c9-aededd63f225/7115eb699743eed687e6349e353433da.png"
+    },
+
+    {
+        "categoria": "Modelos Económicos en México",
+        "pregunta": "¿Qué es un modelo económico?",
+        "respuesta": "Modelo que permite a los economistas estudiar la situación económica de cada país.",
+        "incorrecta1": "Modelo que permite ver las estadísticas de la economía de un Pais.",
+        "incorrecta2": "Modelo que permite te muestra la situación económica de los pueblos.",
+        "incorrecta3": "Modelo que permite calcular la economía de un País. \r",
+        "imagen": "https://assets.sutori.com/user-uploads/image/2bbb8d02-81ed-42e4-85c9-aededd63f225/7115eb699743eed687e6349e353433da.png"
+    },
+
+    {
+        "categoria": "Modelos Económicos en México",
+        "pregunta": "¿Cuál es el modelo económico utilizado en la actualidad?",
+        "respuesta": "Humanismo mexicano.",
+        "incorrecta1": "Neoliberalismo.",
+        "incorrecta2": "Crecimiento hacia afuera.",
+        "incorrecta3": "Desarrollo estabilizador. \r",
+        "imagen": "https://assets.sutori.com/user-uploads/image/2bbb8d02-81ed-42e4-85c9-aededd63f225/7115eb699743eed687e6349e353433da.png"
+    },
+
+    {
+        "categoria": "Modelos Económicos en México",
+        "pregunta": "¿Cuántos son los modelos económicos utilizados en la historia de México?",
+        "respuesta": "5 Modelos.",
+        "incorrecta1": "6 Modelos.",
+        "incorrecta2": "8 Modelos.",
+        "incorrecta3": "3 Modelos. \r",
+        "imagen": "https://assets.sutori.com/user-uploads/image/2bbb8d02-81ed-42e4-85c9-aededd63f225/7115eb699743eed687e6349e353433da.png"
+    },
+
+    {
+        "categoria": "Modelos Económicos en México",
+        "pregunta": "¿Cuáles son los 5 modelos económicos utilizados en la historia de México?",
+        "respuesta": "Humanismo mexicano, Neoliberalismo, Modelo del “crecimiento hacia afuera”, Desarrollo estabilizador y Modelo de la economía mixta.",
+        "incorrecta1": "Humanismo mexicano, Neoliberalismo, Modelo del “crecimiento hacia adentro”, Desarrollo estabilizador y Modelo de la economía mixta.",
+        "incorrecta2": "Humanismo estadounidense, Neoliberalismo, Modelo del “crecimiento hacia afuera”, Desarrollo estabilizador y Modelo de la economía mixta.",
+        "incorrecta3": "Humanismo mexicano, Neoliberalismo, Modelo del “crecimiento hacia afuera”, Desarrollo estabilizador y Modelo ambiental mixto. \r",
+        "imagen": "https://assets.sutori.com/user-uploads/image/2bbb8d02-81ed-42e4-85c9-aededd63f225/7115eb699743eed687e6349e353433da.png"
+    },
+
+    {
+        "categoria": "Modelos Económicos en México",
+        "pregunta": "Cuanta más actividad económica se produzca mayor será el consumo de energía y servicio como transporte ¿que implica este hecho?",
+        "respuesta": "Humanismo mexicano, Neoliberalismo, Modelo del “crecimiento hacia afuera”, Desarrollo estabilizador y Modelo de la economía mixta.",
+        "incorrecta1": "Humanismo mexicano, Neoliberalismo, Modelo del “crecimiento hacia adentro”, Desarrollo estabilizador y Modelo de la economía mixta.",
+        "incorrecta2": "Humanismo estadounidense, Neoliberalismo, Modelo del “crecimiento hacia afuera”, Desarrollo estabilizador y Modelo de la economía mixta.",
+        "incorrecta3": "Humanismo mexicano, Neoliberalismo, Modelo del “crecimiento hacia afuera”, Desarrollo estabilizador y Modelo ambiental mixto. \r",
+        "imagen": "https://assets.sutori.com/user-uploads/image/2bbb8d02-81ed-42e4-85c9-aededd63f225/7115eb699743eed687e6349e353433da.png"
+    },
+
+    {
+        "categoria": "Modelos Económicos en México",
+        "pregunta": "¿Cuál es el modelo económico utilizado en la actualidad?",
+        "respuesta": "Más costes ambientales.",
+        "incorrecta1": "Más costes económicos.",
+        "incorrecta2": "Más coste social.",
+        "incorrecta3": "Menos costes ambientales. \r",
+        "imagen": "https://assets.sutori.com/user-uploads/image/2bbb8d02-81ed-42e4-85c9-aededd63f225/7115eb699743eed687e6349e353433da.png"
+    },
+
+    {
+        "categoria": "Modelos Económicos en México",
+        "pregunta": "¿Qué es la urbanización?",
+        "respuesta": "Proceso de concentración de la población de una nación y de sus actividades económicas.",
+        "incorrecta1": "Asentamiento de personas o poblaciones sobre nuevas tierras limítrofes o conquistadas.",
+        "incorrecta2": "Conjunto de seres vivos de la misma especie que habitan en un lugar determinado.",
+        "incorrecta3": "Adjetivo que indican el lugar de nacimiento o de procedencia de las personas. \r",
+        "imagen": "https://assets.sutori.com/user-uploads/image/2bbb8d02-81ed-42e4-85c9-aededd63f225/7115eb699743eed687e6349e353433da.png"
+    },
+
+    {
+        "categoria": "Modelos Económicos en México",
+        "pregunta": "¿Qué es la urbanización?",
+        "respuesta": "Proceso de concentración de la población de una nación y de sus actividades económicas.",
+        "incorrecta1": "Asentamiento de personas o poblaciones sobre nuevas tierras limítrofes o conquistadas.",
+        "incorrecta2": "Conjunto de seres vivos de la misma especie que habitan en un lugar determinado.",
+        "incorrecta3": "Adjetivo que indican el lugar de nacimiento o de procedencia de las personas. \r",
+        "imagen": "https://assets.sutori.com/user-uploads/image/2bbb8d02-81ed-42e4-85c9-aededd63f225/7115eb699743eed687e6349e353433da.png"
+    },
+
+    {
+        "categoria": "Modelos Económicos en México",
+        "pregunta": "¿Existen tres grandes modelos convencionales?",
+        "respuesta": "El Modelo primario exportador y post-revolucionario, El Modelo de sustitución de importaciones, El Modelo de apertura comercial.",
+        "incorrecta1": "El Modelo secundario exportador y post-revolucionario, El Modelo de comunicación y exportaciones, El Modelo convencional.",
+        "incorrecta2": "El Modelo revolucionario, El Modelo de telecomunicaciones, El Modelo tridimensional.",
+        "incorrecta3": "El Modelo internacional, El Modelo primario exportador y de sustitución de importaciones, El Modelo post-revolucionario. \r",
+        "imagen": "https://estructurasocioeconomicademexico86602160.files.wordpress.com/2018/01/cropped-27f7f02920f33e81b1af435af165487a.jpg"
+    },
+
+    {
+        "categoria": "Modelos Económicos en México",
+        "pregunta": "La segunda convergencia condicional débil contó con tres etapas ¿Cuáles fueron esas etapas?",
+        "respuesta": "Ajuste estructural macroeconómico, apertura comercial y desregulación, Profundización del cambio estructural, Estancamiento económico.",
+        "incorrecta1": "Ajuste económico, Profundización en el comercio, Estancamiento económico.",
+        "incorrecta2": "Ajuste de infraestructura, Profundización del cambio estructural, Estancamiento financiero.",
+        "incorrecta3": "Ajuste agropecuario, Profundización financiero, Estancamiento sociocultural. \r",
+        "imagen": "https://estructurasocioeconomicademexico86602160.files.wordpress.com/2018/01/cropped-27f7f02920f33e81b1af435af165487a.jpg"
+    },
+
+    {
+        "categoria": "Modelos Económicos en México",
+        "pregunta": "¿Cuál fue el modelo económico implementado en México desde la década de 1930 hasta la década de 1980, que buscaba sustituir las importaciones de bienes manufacturados con la producción nacional?",
+        "respuesta": "El modelo económico de sustitución de importaciones.",
+        "incorrecta1": "Modelo de la economía mixta.",
+        "incorrecta2": "Modelo del “crecimiento hacia afuera.",
+        "incorrecta3": "El modelo económico neoliberal. \r",
+        "imagen": "https://estructurasocioeconomicademexico86602160.files.wordpress.com/2018/01/cropped-27f7f02920f33e81b1af435af165487a.jpg"
+    },
+
+    {
+        "categoria": "Modelos Económicos en México",
+        "pregunta": "¿Qué régimen político implementó el modelo económico de sustitución de importaciones en México?",
+        "respuesta": "El régimen autoritario del Partido Revolucionario Institucional (PRI).",
+        "incorrecta1": "Régimen autocrático totalitario.",
+        "incorrecta2": "Régimen liberal representativa.",
+        "incorrecta3": "Régimen democrático. \r",
+        "imagen": "https://estructurasocioeconomicademexico86602160.files.wordpress.com/2018/01/cropped-27f7f02920f33e81b1af435af165487a.jpg"
+    },
+
+    {
+        "categoria": "Modelos Económicos en México",
+        "pregunta": "¿Cuál fue el modelo económico implementado en México a partir de la década de 1980, que se caracterizó por una apertura económica y una reducción del papel del Estado en la economía?",
+        "respuesta": "El modelo económico neoliberal.",
+        "incorrecta1": "Modelo económico administrativo.",
+        "incorrecta2": "Modelo económico socialista.",
+        "incorrecta3": "Modelo la economía mixtas. \r",
+        "imagen": "https://estructurasocioeconomicademexico86602160.files.wordpress.com/2018/01/cropped-27f7f02920f33e81b1af435af165487a.jpg"
+    },
+
+    {
+        "categoria": "Modelos Económicos en México",
+        "pregunta": "¿Qué partido político gobernó México durante la implementación del modelo económico neoliberal?",
+        "respuesta": "El Partido Acción Nacional (PAN).",
+        "incorrecta1": "Partido Revolucionario Institucional (PRI).",
+        "incorrecta2": "Morena.",
+        "incorrecta3": "Partido de la Revolución Democrática (PRD). \r",
+        "imagen": "https://estructurasocioeconomicademexico86602160.files.wordpress.com/2018/01/cropped-27f7f02920f33e81b1af435af165487a.jpg"
+    },
+
+    {
+        "categoria": "Modelos Económicos en México",
+        "pregunta": "¿Cuál fue el modelo económico implementado en México en la década de 1950, que buscaba promover el desarrollo económico a través de políticas de estabilización y control de la inflación?",
+        "respuesta": "El modelo económico de desarrollo estabilizador.",
+        "incorrecta1": "Modelo económico socialista.",
+        "incorrecta2": "El modelo económico neoliberal.",
+        "incorrecta3": "Modelo de la economía mixta. \r",
+        "imagen": "https://estructurasocioeconomicademexico86602160.files.wordpress.com/2018/01/cropped-27f7f02920f33e81b1af435af165487a.jpg"
+    },
+
+    {
+        "categoria": "Modelos Económicos en México",
+        "pregunta": "¿Qué régimen político implementó el modelo económico de desarrollo estabilizador en México?",
+        "respuesta": "El régimen autoritario del PRI.",
+        "incorrecta1": "El Partido Acción Nacional (PAN).",
+        "incorrecta2": "Régimen autocrático totalitario.",
+        "incorrecta3": "Régimen democrático. \r",
+        "imagen": "https://estructurasocioeconomicademexico86602160.files.wordpress.com/2018/01/cropped-27f7f02920f33e81b1af435af165487a.jpg"
+    },
+
+    {
+        "categoria": "Modelos Económicos en México",
+        "pregunta": "¿Cuál era la relación entre el modelo económico de desarrollo hacia adentro y la división de poderes en México?",
+        "respuesta": "Durante el periodo en que se implementó este modelo, el poder ejecutivo tenía una gran influencia en la economía, y se crearon empresas estatales a través del poder legislativo.",
+        "incorrecta1": "El poder Legislativo tenía una gran influencia en la economía.",
+        "incorrecta2": "El poder Judicial tenía una gran influencia en las empresas.",
+        "incorrecta3": "El modelo económico de desarrollo estabilizador. \r",
+        "imagen": "https://estructurasocioeconomicademexico86602160.files.wordpress.com/2018/01/cropped-27f7f02920f33e81b1af435af165487a.jpg"
+    },
+
+    {
+        "categoria": "Modelos Económicos en México",
+        "pregunta": "¿Qué modelo económico en México se centró en la estabilidad macroeconómica a través del control de la inflación y la implementación de políticas fiscales prudentes?",
+        "respuesta": "El modelo económico de desarrollo estabilizador.",
+        "incorrecta1": "Régimen autocrático totalitario.",
+        "incorrecta2": "Régimen liberal representativo.",
+        "incorrecta3": "El modelo económico de desarrollo compartido. \r",
+        "imagen": "https://estructurasocioeconomicademexico86602160.files.wordpress.com/2018/01/cropped-27f7f02920f33e81b1af435af165487a.jpg"
+    }
+]

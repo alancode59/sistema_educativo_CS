@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="free-educational-responsive-web-template-webEdu">
+	<meta name="author" content="webThemez.com">
+	<link href="../../images/iconoCS.png" rel="icon">
+	<title>Juego de preguntas</title>
+	<link rel="favicon" href="../images/favicon.png">
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/font-awesome.min.css">
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="../../css/bootstrap-theme.css" media="screen">
+	<link rel="stylesheet" href="../../css/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.all.min.js"></script>
+
+
+	<style>
+
+	* {
+      transition: all 0.3s;
+    }
+
+    .sectionU {
+      background: #ffffff;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      font-family: calibri;
+      font-size: 120%;
+    }
+
+    .contenedor {
+      width: 98vw;
+      height: 97vh;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .encabezado {
+      position: relative;
+      background: #3d84e6;
+      min-width: 300px;
+      width: 70%;
+      max-width: 600px;
+      padding: 10px;
+      color:#ffffff;
+    }
+
+    .categoria {
+      opacity: 0.3;
+      text-align: left;
+    }
+
+    .pregunta {
+      padding: 10px;
+    }
+
+    .imagen {
+      object-fit: cover;
+      height: 0px;
+      width: 0px;
+    }
+
+    .btnU {
+      background: #3d84e6;
+      width: 60%;
+      max-width: 550px;
+      padding: 10px;
+      margin: 5px;
+      cursor: pointer;
+      color:#ffffff;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+    
+    .numero{
+      position: absolute;
+      opacity:0.3;
+      top: 10px;
+      right: 10px;
+    }
+    
+    .puntaje{
+      padding:10px;
+      color:#6E6E6E;
+    }
+        
+    </style>
+
+
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="index.html">
+					<img src="../../images/logo_cetis.png" alt="Techro HTML5 template"></a>
+			</div>
+
+			<div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav pull-right mainNav">
+
+                <li class="#">
+                  <a href="../../index.html"><b></b>
+                    <img src="../../images/in.png" alt="#" height="60px">
+                  </a>
+                </li>
+
+                <li class="#">
+                  <a href="../about.html">
+                    <img src="../../images/infor.png" alt="#" height="60px">
+                  </a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b>
+                    <img src="../../images/j.png" alt="" height="60px">
+                  </a>
+                  
+                  <ul class="dropdown-menu">
+                    <!--li><a href="./pages/videos.html">Parcial 1</a></li-->
+                    <li><a href="./juegoP1.html">Quiz</a></li>
+                    <li><a href="./juegoP2.html">Memorama</a></li>
+                    <li><a href="./juegoP3.html">Ahorcado</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b>
+                    <img src="../../images/temas.png" alt="" height="60px">
+                  </a>
+                  <ul class="dropdown-menu">
+                    <!--li><a href="./pages/sidebar-right.html">Parcial 1</a></li-->
+                    <li><a href="./../price.html">Parcial 1</a></li>
+                    <li><a href="./../temasP2.html">Parcial 2</a></li>
+                    <li><a href="./../temasP3.html">Parcial 3</a></li>
+                  </ul>
+                </li>
+
+                <li class="#">
+                  <a href="../contact.html">
+                    <img src="../../images/co2.png" alt="#" height="60px">
+                  </a>
+                </li>
+
+                <li class="#">
+                  <a href="../Ayuda.html">
+                    <img src="../../images/ayuda.png" alt="#" height="60px">
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+		</div>
+	</div>
+	<!-- /.navbar -->
+
+	<header id="head" class="secondary">
+            <div class="container">
+                    <h1>Juegos de Aprendizaje</h1>
+                    <p>Tema del segundo parcial de la materia.</p>
+                </div>
+    </header>
+
+	<!-- container -->
+	<section class="sectionU">
+		<div class="contenedor">
+			<div class="puntaje" id="puntaje"></div>
+			<div class="encabezado">
+			<div class="categoria" id="categoria">
+			</div>
+			<div class="numero" id="numero"></div>
+			<div class="pregunta" id="pregunta">
+			</div>
+			<img src="#" class="imagen" id="imagen">
+			</div>
+			<div class="btnU" id="btn1" onclick="oprimir_btn(0)"></div>
+			<div class="btnU" id="btn2" onclick="oprimir_btn(1)"></div>
+			<div class="btnU" id="btn3" onclick="oprimir_btn(2)"></div>
+			<div class="btnU" id="btn4" onclick="oprimir_btn(3)"></div>
+			
+			<script src="./RecursosJuego/js/preguntas1.js"></script>
+		</div>
+	</section>
+
+	<div>
+
+			<br><br><br><br>
+
+	</div>
+
+
+ <footer id="footer">
+
+	<div class="container">
+		<div class="row">
+		 <div class="footerbottom">
+		   <div class="col-md-3 col-sm-6">
+			 <div class="footerwidget">
+			   <h4>
+				 Materia
+			   </h4>
+			   <div class="menu-course">
+				 <ul class="menu">
+				   <li>
+					 Ciencia, Tecnología, Sociedad y Valores
+				   </li>
+				   <li>
+					 Campo Disciplinar: Ciencias Sociales
+				   </li>
+				   <li>
+					 Semestre: Quinto
+				   </li>
+				   <li>
+					  Periodo: Febrero - Agosto 2023
+				   </li>
+				 </ul>
+			   </div>
+			 </div>
+		   </div>
+		   <div class="col-md-3 col-sm-6">
+			 <div class="footerwidget">
+			   <h4>
+				 Categorias
+			   </h4>
+			   <div class="menu-course">
+				<ul class="menu">
+					<li> 
+						<a href="../price.html">
+						Aprendizajes esperados - 1er. parcial  
+						</a>
+					</li>
+					<li>
+						<a href="../temasP2.html">
+						Aprendizajes esperados - 2do. parcial
+						</a>
+					</li>
+					<li>
+						<a href="../temasP3.html">
+						Aprendizajes esperados - 3er. parcial 
+						</a>
+					</li>
+				</ul>
+			   </div>
+			 </div>
+		   </div>
+		   <div class="col-md-3 col-sm-6">
+			 <div class="footerwidget">
+			   <h4>
+				 Docente
+			   </h4>
+			   <div class="menu-course">
+				 <ul class="menu">
+				   <li>
+					 Mtra.Etna Aránzazu Velázquez García.
+				   </li>
+				   <li>
+					   Quinto Semestre. 
+				   </li>
+				   <li>
+					 etnavelazquezgarcía@gmail.com
+				   </li>
+				 </ul>
+			   </div>
+			 </div>
+		   </div>
+		   <div class="col-md-3 col-sm-6"> 
+			    <div class="footerwidget"> 
+    				<h4>Contacto</h4> 
+				   <p>Centros de Estudios Tecnológicos Industrial y de Servicios No.132</p>
+				   <div class="contact-info"> 
+				   <i class="fa fa-map-marker"></i> Calle Progreso Sur No 35, Santa Cruz Guadalupe, 90810 Chiautempan, Tlax.<br>
+				   <i class="fa fa-phone"></i>246 464 0296 <br>
+				   <i class="fa fa-envelope-o"></i> cetis132.dir@uemstis.sems.gob.mx
+				   </div> 
+				</div> 
+		   </div>
+		 </div>
+	 </div>
+			<div class="social text-center">
+				<a href="https://www.facebook.com/profile.php?id=100064348592184"><i class="fa fa-facebook"></i></a>
+			</div>
+
+			<div class="clear"></div>
+			<!--CLEAR FLOATS-->
+		</div>
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 panel">
+						<div class="panel-body">
+							<p class="simplenav">
+								<a href="price.html">Tema Primer Parcial</a> |
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 panel">
+						<div class="panel-body">
+							<p class="text-right">
+								Ciencia, Tecnología, Sociedad y Valores <a href="https://www.facebook.com/profile.php?id=100009781981132&mibextid=ZbWKwL" rel="develop">LosPadrinos.com</a>
+							</p>
+						</div>
+					</div>
+
+				</div>
+				<!-- /row of panels -->
+			</div>
+		</div>
+	</footer>
+
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="../../js/custom.js"></script>
+</body>
+</html>

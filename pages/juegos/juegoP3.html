@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="free-educational-responsive-web-template-webEdu">
+	<meta name="author" content="webThemez.com">
+	<link href="../../images/iconoCS.png" rel="icon">
+	<title>Juego del Ahorcado</title>
+	<link rel="favicon" href="../images/favicon.png">
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/font-awesome.min.css">
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="../../css/bootstrap-theme.css" media="screen">
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<style>
+            .sectioni{
+                width: 960px;
+                margin: 0 auto;
+            }
+            h1{
+                text-align: center;
+            }
+            #pantalla{
+                border: groove 4px #030858;
+                background: #3d84e6;   
+            }
+
+        </style>
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="index.html">
+					<img src="../../images/logo_cetis.png" alt="Techro HTML5 template"></a>
+			</div>
+
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav pull-right mainNav">
+
+                <li class="#">
+                  <a href="../../index.html"><b></b>
+                    <img src="../../images/in.png" alt="#" height="60px">
+                  </a>
+                </li>
+
+                <li class="#">
+                  <a href="../about.html">
+                    <img src="../../images/infor.png" alt="#" height="60px">
+                  </a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b>
+                    <img src="../../images/j.png" alt="" height="60px">
+                  </a>
+                  
+                  <ul class="dropdown-menu">
+                    <!--li><a href="./pages/videos.html">Parcial 1</a></li-->
+                    <li><a href="./juegoP1.html">Quiz</a></li>
+                    <li><a href="./juegoP2.html">Memorama</a></li>
+                    <li><a href="./juegoP3.html">Ahorcado</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b>
+                    <img src="../../images/temas.png" alt="" height="60px">
+                  </a>
+                  <ul class="dropdown-menu">
+                    <!--li><a href="./pages/sidebar-right.html">Parcial 1</a></li-->
+                    <li><a href="./../price.html">Parcial 1</a></li>
+                    <li><a href="./../temasP2.html">Parcial 2</a></li>
+                    <li><a href="./../temasP3.html">Parcial 3</a></li>
+                  </ul>
+                </li>
+
+                <li class="#">
+                  <a href="../contact.html">
+                    <img src="../../images/co2.png" alt="#" height="60px">
+                  </a>
+                </li>
+
+                <li class="#">
+                  <a href="../Ayuda.html">
+                    <img src="../../images/ayuda.png" alt="#" height="60px">
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+		</div>
+	</div>
+	<!-- /.navbar -->
+
+	<header id="head" class="secondary">
+            <div class="container">
+                    <h1>Juegos de Aprendizaje</h1>
+                    <p>Tema del segundo parcial de la materia.</p>
+                </div>
+    </header>
+
+	<section class ="sectioni">
+	<h1>-El juego del ahorcado-</h1>
+        <canvas id="pantalla" width="960px" height="450px"> <!-- etiqueta del canvas con sus medidas en la pantalla -->
+            Tu navegador no soporta Canvas.
+        </canvas>
+        <!-- El boton que nos sirve para recargar la pagina y asi generar una nueva palabra y volver a jugar -->
+        <button class="btn" type="reset" onclick="javascript:window.location.reload();">Volver a Jugar</button>
+        <script>
+            
+            /* Variables */
+            var ctx;
+            var canvas;
+            var palabra;
+            var letras = "QWERTYUIOPASDFGHJKLÑZXCVBNM";
+            var colorTecla = "#585858";
+            var colorMargen = "black";
+            var inicioX = 200;
+            var inicioY = 300;
+            var lon = 35;
+            var margen = 20;
+            var pistaText = "";
+
+            /* Arreglos */
+            var teclas_array = new Array();
+            var letras_array = new Array();
+            var palabras_array = new Array();
+
+            /* Variables de control */
+            var aciertos = 0;
+            var errores = 0;
+            
+            /* Palabras */
+            palabras_array.push("EJECUTIVO");
+            palabras_array.push("LEGISLATIVO");
+            palabras_array.push("JUDICIAL");
+            palabras_array.push("POLITICA");
+            palabras_array.push("CORRUPCION");
+            palabras_array.push("REVOLUCION");
+            palabras_array.push("ECONOMIA");
+            palabras_array.push("MIGRACION");
+            palabras_array.push("DEMOGRAFIA");
+            palabras_array.push("URBANIZACION");
+            palabras_array.push("DERECHO");
+            palabras_array.push("AUTORITARIOS");
+            palabras_array.push("TOTALITARIOS");
+            palabras_array.push("SOCIOLOGIA");
+            palabras_array.push("RACISMO");
+                    
+            /* Objetos */
+            function Tecla(x, y, ancho, alto, letra){
+                this.x = x;
+                this.y = y;
+                this.ancho = ancho;
+                this.alto = alto;
+                this.letra = letra;
+                this.dibuja = dibujaTecla;
+            }
+            
+            function Letra(x, y, ancho, alto, letra){
+                this.x = x;
+                this.y = y;
+                this.ancho = ancho;
+                this.alto = alto;
+                this.letra = letra;
+                this.dibuja = dibujaCajaLetra;
+                this.dibujaLetra = dibujaLetraLetra;
+            }
+           
+            /* Funciones */
+
+            /* Dibujar Teclas*/
+            function dibujaTecla(){
+                ctx.fillStyle = colorTecla;
+                ctx.strokeStyle = colorMargen;
+                ctx.fillRect(this.x, this.y, this.ancho, this.alto);
+                ctx.strokeRect(this.x, this.y, this.ancho, this.alto);
+                
+                ctx.fillStyle = "white";
+                ctx.font = "bold 20px courier";
+                ctx.fillText(this.letra, this.x+this.ancho/2-5, this.y+this.alto/2+5);
+            }
+            
+            /* Dibua la letra y su caja */
+            function dibujaLetraLetra(){
+                var w = this.ancho;
+                var h = this.alto;
+                ctx.fillStyle = "black";
+                ctx.font = "bold 30px Courier";
+                ctx.fillText(this.letra, this.x+w/2-12, this.y+h/2+14);
+            }
+            function dibujaCajaLetra(){
+                var w = this.ancho;
+                var h = this.alto;
+                ctx.fillStyle = "white";
+                ctx.strokeStyle = "black";
+                ctx.fillRect(this.x, this.y, this.ancho, this.alto);
+                ctx.strokeRect(this.x, this.y, this.ancho, this.alto);
+            }
+            
+            /// Funcion para dar una pista la usuario ////
+            function pistaFunction(palabra){
+                let pista = ""; // Se crea la variable local pista que contendra nuestra frase de pista
+                switch(palabra){  // Se crea un switch para poder controlar las pistas segun la palabra 
+                    case 'EJECUTIVO':   // Se debera hacer un case por cada palabra 
+                        pista = "Encargado de la administración del Estado y de la toma de decisiones en materia de política.";
+                        break;     // Es importante el break en cada case 
+                    case 'LEGISLATIVO':
+                        pista = "Creación, discusión, aprobación de leyes y de fiscalizar al gobierno.";
+                        break;
+                    case 'JUDICIAL':
+                        pista = "Encargado de administrar justicia en el país y garantizar el estado de derecho.";
+                        break;
+                    case 'POLITICA':
+                        pista = "Disciplina que estudia, describe, analiza las teorías y las prácticas, los sistemas y los comportamientos políticos.";
+                        break;
+                    case 'CORRUPCION':
+                        pista = "f";
+                        break;
+                    case 'REVOLUCION':
+                        pista = "Cambios disruptivos que han ocurrido en la economía, la sociedad y la cultura debido al rápido avance de la tecnología digital.";
+                        break;
+                    case 'ECONOMIA':
+                        pista = "Comprensión e interpretación de las relaciones económicas, políticas y sociales";
+                        break;
+                    case 'MIGRACION':
+                        pista = "Cambios de residencia de las personas desde un lugar a otro";
+                        break;
+                    case 'DEMOGRAFIA':
+                        pista = "Es un ciencia social que estudia el volumen y crecimiento";
+                        break;
+                    case 'URBANIZACION':
+                        pista = "Proceso de concentración de la población de una nación y de sus actividades económicas.";
+                        break;
+                    case 'DERECHO':
+                        pista = "Se encarga de estudiar el conjunto de las instituciones";
+                        break;
+                    case 'AUTORITARIOS':
+                        pista = "Régimen político que abusa de su autoridad y se impone al poder sin un consenso por parte del pueblo.";
+                        break;
+                    case 'TOTALITARIOS':
+                        pista = "Sistema de gobierno y práctica política cuyo principio es el ejercicio absoluto y sin restricciones del poder.";
+                        break;
+                    case 'SOCIOLOGIA':
+                        pista = "Ayuda a comprender la migración, el crecimiento poblacional, las guerras, el desarrollo económico.";
+                        break;
+                    case 'RACISMO':
+                        pista = "Estereotipos y prejuicios que asocias ciertos grupos étnicos con la pobreza y la marginación.";
+                        break;
+                    default:  // El defaul se puede omitir // 
+                        pista="No hay pista aun xP";
+                }
+                // Pintamos la palabra en el canvas , en este ejemplo se pinta arriba a la izquierda //
+                ctx.fillStyle = "white";  // Aqui ponemos el color de la letra
+                ctx.font = "16px Arial";  // aqui ponemos el tipo y tamaño de la letra
+                ctx.fillText(pista, 10, 15);  // aqui ponemos la frase en nuestro caso la variable pista , seguido de la posx y posy
+            }
+           
+             /* Distribuir nuestro teclado con sus letras respectivas al acomodo de nuestro array */
+            function teclado(){
+                var ren = 0;
+                var col = 0;
+                var letra = "";
+                var miLetra;
+                var x = inicioX;
+                var y = inicioY;
+                for(var i = 0; i < letras.length; i++){
+                    letra = letras.substr(i,1);
+                    miLetra = new Tecla(x, y, lon, lon, letra);
+                    miLetra.dibuja();
+                    teclas_array.push(miLetra);
+                    x += lon + margen;
+                    col++;
+                    if(col==10){
+                        col = 0;
+                        ren++;
+                        if(ren==2){
+                            x = 280;
+                        } else {
+                            x = inicioX;
+                        }
+                    }
+                    y = inicioY + ren * 50;
+                }
+            }
+            
+            
+            /* aqui obtenemos nuestra palabra aleatoriamente y la dividimos en letras */
+            function pintaPalabra(){
+                var p = Math.floor(Math.random()*palabras_array.length);
+                palabra = palabras_array[p];
+      
+                pistaFunction(palabra);
+            
+                var w = canvas.width;
+                var len = palabra.length;
+                var ren = 0;
+                var col = 0;
+                var y = 230;
+                var lon = 50;
+                var x = (w - (lon+margen) *len)/2;
+                for(var i=0; i<palabra.length; i++){
+                    letra = palabra.substr(i,1);
+                    miLetra = new Letra(x, y, lon, lon, letra);
+                    miLetra.dibuja();
+                    letras_array.push(miLetra);
+                    x += lon + margen;
+                }
+            }
+            
+            /* dibujar cadalzo y partes del pj segun sea el caso */
+            function horca(errores){
+                var imagen = new Image();
+                imagen.src = "./RecursosJuego/img/JuegoP3/ahorcado"+errores+".png";
+                imagen.onload = function(){
+                    ctx.drawImage(imagen, 390, 0, 230, 230);
+                }
+                /*************************************************
+                // Imagen 2 mas pequeña a un lado de la horca //       
+                var imagen = new Image();
+                imagen.src = "imagenes/ahorcado"+errores+".png";
+                imagen.onload = function(){
+                    ctx.drawImage(imagen, 620, 0, 100, 100);
+                }
+                *************************************************/
+            }
+            
+            /* ajustar coordenadas */
+            function ajusta(xx, yy){
+                var posCanvas = canvas.getBoundingClientRect();
+                var x = xx-posCanvas.left;
+                var y = yy-posCanvas.top;
+                return{x:x, y:y}
+            }
+            
+            /* Detecta tecla clickeada y la compara con las de la palabra ya elegida al azar */
+            function selecciona(e){
+                var pos = ajusta(e.clientX, e.clientY);
+                var x = pos.x;
+                var y = pos.y;
+                var tecla;
+                var bandera = false;
+                for (var i = 0; i < teclas_array.length; i++){
+                    tecla = teclas_array[i];
+                    if (tecla.x > 0){
+                        if ((x > tecla.x) && (x < tecla.x + tecla.ancho) && (y > tecla.y) && (y < tecla.y + tecla.alto)){
+                            break;
+                        }
+                    }
+                }
+                if (i < teclas_array.length){
+                    for (var i = 0 ; i < palabra.length ; i++){ 
+                        letra = palabra.substr(i, 1);
+                        if (letra == tecla.letra){ /* comparamos y vemos si acerto la letra */
+                            caja = letras_array[i];
+                            caja.dibujaLetra();
+                            aciertos++;
+                            bandera = true;
+                        }
+                    }
+                    if (bandera == false){ /* Si falla aumenta los errores y checa si perdio para mandar a la funcion gameover */
+                        errores++;
+                        horca(errores);
+                        if (errores == 5) gameOver(errores);
+                    }
+                    /* Borra la tecla que se a presionado */
+                    ctx.clearRect(tecla.x - 1, tecla.y - 1, tecla.ancho + 2, tecla.alto + 2);
+                    tecla.x - 1;
+                    /* checa si se gano y manda a la funcion gameover */
+                    if (aciertos == palabra.length) gameOver(errores);
+                }
+            }
+            
+            /* Borramos las teclas y la palabra con sus cajas y mandamos msj segun el caso si se gano o se perdio */
+            function gameOver(errores){
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = "black";
+
+                ctx.font = "bold 50px Courier";
+                if (errores < 5){
+                    ctx.fillText("Muy bien, la palabra es: ", 110, 280);
+                } else {
+                    ctx.fillText("Lo sentimos, la palabra era: ", 110, 280);
+                }
+                
+                ctx.font = "bold 80px Courier";
+                lon = (canvas.width - (palabra.length*40))/2;
+                ctx.fillText(palabra, lon, 354);
+                horca(errores);
+            }
+            
+            /* Detectar si se a cargado nuestro contexco en el canvas, iniciamos las funciones necesarias para jugar o se le manda msj de error segun sea el caso */
+            window.onload = function(){
+                canvas = document.getElementById("pantalla");
+                if (canvas && canvas.getContext){
+                    ctx = canvas.getContext("2d");
+                    if(ctx){
+                        teclado();
+                        pintaPalabra();
+                        horca(errores);
+                        canvas.addEventListener("click", selecciona, false);
+                    } else {
+                        alert ("Error al cargar el contexto!");
+                    }
+                }
+            }
+        </script>
+
+	</section>
+
+ <footer id="footer">
+
+	<div class="container">
+		<div class="row">
+		 <div class="footerbottom">
+		   <div class="col-md-3 col-sm-6">
+			 <div class="footerwidget">
+			   <h4>
+				 Materia
+			   </h4>
+			   <div class="menu-course">
+				 <ul class="menu">
+				   <li>
+					 Ciencia, Tecnología, Sociedad y Valores
+				   </li>
+				   <li>
+					 Campo Disciplinar: Ciencias Sociales
+				   </li>
+				   <li>
+					 Semestre: Quinto
+				   </li>
+				   <li>
+					  Periodo: Febrero - Agosto 2023
+				   </li>
+				 </ul>
+			   </div>
+			 </div>
+		   </div>
+		   <div class="col-md-3 col-sm-6">
+			 <div class="footerwidget">
+			   <h4>
+				 Categorias
+			   </h4>
+			   <div class="menu-course">
+				<ul class="menu">
+					<li> 
+						<a href="../price.html">
+						Aprendizajes esperados - 1er. parcial  
+						</a>
+					</li>
+					<li>
+						<a href="../temasP2.html">
+						Aprendizajes esperados - 2do. parcial
+						</a>
+					</li>
+					<li>
+						<a href="../temasP3.html">
+						Aprendizajes esperados - 3er. parcial 
+						</a>
+					</li>
+				</ul>
+			   </div>
+			 </div>
+		   </div>
+		   <div class="col-md-3 col-sm-6">
+			 <div class="footerwidget">
+			   <h4>
+				 Docente
+			   </h4>
+			   <div class="menu-course">
+				 <ul class="menu">
+				   <li>
+					 Mtra.Etna Aránzazu Velázquez García.
+				   </li>
+				   <li>
+					   Quinto Semestre. 
+				   </li>
+				   <li>
+					 etnavelazquezgarcía@gmail.com
+				   </li>
+				 </ul>
+			   </div>
+			 </div>
+		   </div>
+		   <div class="col-md-3 col-sm-6"> 
+					 <div class="footerwidget"> 
+								<h4>Contacto</h4> 
+							   <p>Centros de Estudios Tecnológicos Industrial y de Servicios No.132</p>
+				   <div class="contact-info"> 
+				   <i class="fa fa-map-marker"></i> Calle Progreso Sur No 35, Santa Cruz Guadalupe, 90810 Chiautempan, Tlax.<br>
+				   <i class="fa fa-phone"></i>246 464 0296 <br>
+					<i class="fa fa-envelope-o"></i> cetis132.dir@uemstis.sems.gob.mx
+					 </div> 
+					   </div> 
+		   </div>
+		 </div>
+	 </div>
+			<div class="social text-center">
+				<a href="https://www.facebook.com/profile.php?id=100064348592184"><i class="fa fa-facebook"></i></a>
+			</div>
+
+			<div class="clear"></div>
+			<!--CLEAR FLOATS-->
+		</div>
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 panel">
+						<div class="panel-body">
+							<p class="simplenav">
+								<a href="price.html">Tema Primer Parcial</a> |
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 panel">
+						<div class="panel-body">
+							<p class="text-right">
+								Ciencia, Tecnología, Sociedad y Valores <a href="https://www.facebook.com/profile.php?id=100009781981132&mibextid=ZbWKwL" rel="develop">LosPadrinos.com</a>
+							</p>
+						</div>
+					</div>
+
+				</div>
+				<!-- /row of panels -->
+			</div>
+		</div>
+	</footer>
+
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="../../js/custom.js"></script>
+</body>
+</html>
